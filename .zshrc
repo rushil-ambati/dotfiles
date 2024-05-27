@@ -19,6 +19,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# local config
+if [[ -f ~/.zshrc.local ]]; then
+  source ~/.zshrc.local
+fi
+
 if [[ -f "/opt/homebrew/bin/brew" ]] then
   # If you're using macOS, you'll want this enabled
   eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -214,8 +219,3 @@ alias vim='nvim'
 
 # dotfiles
 alias config='git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME'
-
-# local config
-if [[ -f ~/.zshrc.local ]]; then
-  source ~/.zshrc.local
-fi
