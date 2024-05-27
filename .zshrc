@@ -1,16 +1,3 @@
-# Requirements:
-# - zsh
-# - oh-my-zsh
-# - powerlevel10k
-# - notify-send on Linux
-# - zsh-autosuggestions
-# - zsh-syntax-highlighting
-# - fzf + fzf-tab
-# - you-should-use
-# - bat
-# - eza
-# - vim + neovim (lazy.nvim)
-# - tmux (tpm + catppuccin)
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -151,7 +138,9 @@ plugins=(
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 # ssh-agent
-ssh-add --apple-use-keychain $HOME/.ssh/id_ed25519 2>/dev/null
+if [[ $(uname) == "Darwin" ]]; then
+  ssh-add --apple-use-keychain $HOME/.ssh/id_ed25519 2>/dev/null
+fi
 zstyle :omz:plugins:ssh-agent agent-forwarding yes
 
 # fzf-tab
