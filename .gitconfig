@@ -2,21 +2,9 @@
 	name = Rushil Ambati
 	email = rush2369.21@gmail.com
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RF
-	excludesfile = /Users/rushil/.gitignore
-	editor = code -w
+	excludesfile = ~/.gitignore
 [credential]
 	helper = cache
-[diff]
-    tool = default-difftool
-[difftool "default-difftool"]
-    cmd = code --wait --diff $LOCAL $REMOTE
-[merge]
-  tool = code
-[mergetool "code"]
-  cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
-[interactive]
-	diffFilter = diff-so-fancy --patch
 [color]
 	ui = true
 [color "diff-highlight"]

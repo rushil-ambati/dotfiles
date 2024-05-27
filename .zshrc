@@ -160,10 +160,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR='nvim'
 else
-  export EDITOR='vim'
+  export EDITOR='nvim'
 fi
+export VISUAL="$EDITOR"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -208,3 +209,4 @@ alias vim='nvim'
 
 # dotfiles
 alias config='git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME'
+config pull
