@@ -209,4 +209,4 @@ alias vim='nvim'
 
 # dotfiles
 alias config='git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME'
-config pull
+config pull --quiet
