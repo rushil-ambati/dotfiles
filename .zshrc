@@ -1,4 +1,3 @@
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -138,10 +137,10 @@ plugins=(
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 # ssh-agent
-if [[ $(uname) == "Darwin" ]]; then
-  ssh-add --apple-use-keychain $HOME/.ssh/id_ed25519 2>/dev/null
-fi
-zstyle :omz:plugins:ssh-agent agent-forwarding yes
+# if [[ $(uname) == "Darwin" ]]; then
+#   ssh-add --apple-use-keychain $HOME/.ssh/id_ed25519 2>/dev/null
+# fi
+# zstyle :omz:plugins:ssh-agent agent-forwarding yes
 
 # fzf-tab
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
@@ -209,4 +208,3 @@ alias vim='nvim'
 
 # dotfiles
 alias config='git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME'
-config pull --quiet
