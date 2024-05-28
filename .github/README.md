@@ -16,10 +16,12 @@
 - [`tmux`](https://github.com/tmux/tmux/wiki/Installing#installing-tmux) + [`tpm`](https://github.com/tmux-plugins/tpm?tab=readme-ov-file#installation) (catppuccin included)
 - `notify-send` on Linux
 
+> Note: Be sure to back up all existing dotfiles before proceeding.
+
 ```sh
 git clone --bare https://github.com/rushil-ambati/dotfiles.git $HOME/.config/dotfiles
-# backup or remove existing files
-git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME config checkout
+git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME checkout
+exec zsh
 config config --local status.showUntrackedFiles no
 ```
 
