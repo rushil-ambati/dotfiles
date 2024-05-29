@@ -97,7 +97,6 @@ source <(fzf --zsh)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  auto-notify # notifies if cmd takes >10s
   colored-man-pages
   command-not-found
   common-aliases
