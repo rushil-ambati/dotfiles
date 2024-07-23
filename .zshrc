@@ -120,7 +120,6 @@ plugins=(
   mosh
   pip
   python
-  ripgrep
   sudo # esc-esc to prepend sudo
   tmux
   urltools # urlencode, urldecode
