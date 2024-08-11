@@ -10,6 +10,7 @@
 - [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
 - [`you-should-use`](https://github.com/MichaelAquilina/zsh-you-should-use?tab=readme-ov-file#installation)
 - [`fzf`](https://github.com/junegunn/fzf?tab=readme-ov-file#installation) + [`fzf-tab`](https://github.com/Aloxaf/fzf-tab?tab=readme-ov-file#oh-my-zsh)
+- [`atuin`](https://docs.atuin.sh/guide/installation/)
 - [`bat`](https://github.com/sharkdp/bat?tab=readme-ov-file#installation)
 - [`eza`](https://github.com/eza-community/eza/blob/main/INSTALL.md#installation)
 - [`neovim`](https://github.com/neovim/neovim/blob/master/INSTALL.md) ([`lazy.nvim`](https://github.com/folke/lazy.nvim?tab=readme-ov-file#-installation))
