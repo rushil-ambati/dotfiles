@@ -111,6 +111,7 @@ plugins=(
   fzf
   fzf-tab
   gh
+  git
   git-auto-fetch
   gitfast
   golang
@@ -206,3 +207,4 @@ alias vim='nvim'
 
 # dotfiles
 alias config='git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME'
+
